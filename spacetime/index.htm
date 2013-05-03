@@ -1,0 +1,108 @@
+<html> 
+ <head> 
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ <title>余震时空分析</title>
+
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+
+</head> 
+
+ <body onload="initialize()">
+     <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">四川雅安地震信息</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="../index.htm">Home</a></li>
+                <li><a href="../death.htm">伤亡状况统计</a></li>
+                <li class="active"><a href="index.htm">余震时空分析</a></li>
+                <li><a href="../damage.htm">次生灾害分析</a></li>
+                <li><a href="../rs.htm">遥感影像分析</a></li>
+                <li><a href="../about.htm">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+	  
+<div class="bs-docs-example">	 
+	<ul class="nav nav-pills">
+	  <li class="active"><a href="index.htm">预览</a></li>
+	  <li><a href="timeseries.htm">地震时间序列</a></li>
+	  <li><a href="animation.htm">地震动画展示</a></li>
+	  <li><a href="kml-all-3d.htm">Google Earth三维 (所有点)</a></li>
+	  <li><a href="kml-sub-plain.htm">Google Earth三维 (＞3级)</a></li>
+      <li><a href="ppa.htm">点模式分析</a></li>
+	</ul>
+</div>
+	
+	
+          <div class="row-fluid">
+            <div class="span4">
+              <h3>地震时间序列分析</h3>
+              <p>查询四川地区，自2013年4月1日来发生的所有地震，共计1055条记录，其中5-7级5次；4-5级41次；3-4级181次。</p>
+              <p><a class="btn" href="timeseries.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h3>地震动画展示</h3>
+              <p>利用R下面的animation包绘制雅安余震时间序列动画。</p>
+              <p><a class="btn" href="animation.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h3>点模式分析</h3>
+              <p>对震后90余次大于3.0级余震的点模式分析（PPA）分析结果，可以看出该地震的走向与断裂带高度一致。</p>
+              <p><a class="btn" href="ppa.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+          <div class="row-fluid">
+            <div class="span4">
+              <h3>近期地震三维显示</h3>
+              <p>利用Google Earth显示四川区域，自2013年4月1日来发生的所有地震，共计1055条记录。</p>
+              <p><a class="btn" href="kml-all-3d.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h3>近期>3级地震三维显示</h3>
+              <p>利用Google Earth显示四川区域，自2013年4月1日来发生的大于3级的所有地震，共计227条记录。</p>
+              <p><a class="btn" href="kml-sub-plain.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h3>待补充</h3>
+              <p> </p>
+              <p><a class="btn" href="index.htm">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+	
+
+<hr /> 
+    <center>
+		<p>数据来源：中国地震科学数据共享中心。意见反馈：wangjh@lreis.ac.cn；微博：<a href="http://weibo.com/hellowangjh" target="_blank">@沐洲</a><p> <br/>
+		<p>Copyright &copy; 2013 Jianghao Wang All Rights Reserved.<p>
+	</center> 
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+	
+ </body>  
+  </html>

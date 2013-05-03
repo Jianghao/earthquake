@@ -1,0 +1,65 @@
+<html> 
+ <head> 
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ <title>地震三维显示</title>
+
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+</head> 
+
+ <body onload="initialize()">
+     <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">四川雅安地震信息</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="../index.htm">Home</a></li>
+                <li><a href="../death.htm">伤亡状况统计</a></li>
+                <li class="active"><a href="index.htm">余震时空分析</a></li>
+                <li><a href="../damage.htm">次生灾害分析</a></li>
+                <li><a href="../rs.htm">遥感影像分析</a></li>
+                <li><a href="../about.htm">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+	  
+<div class="bs-docs-example">	 
+	<ul class="nav nav-pills">
+	  <li><a href="index.htm">预览</a></li>
+	  <li><a href="timeseries.htm">地震时间序列</a></li>
+	  <li><a href="animation.htm">地震动画展示</a></li>
+	  <li  class="active"><a href="kml-all-3d.htm">Google Earth三维 (所有点)</a></li>
+	  <li><a href="kml-sub-plain.htm">Google Earth三维 (＞3级)</a></li>
+      <li><a href="ppa.htm">点模式分析</a></li>
+	</ul>
+</div>
+	
+	
+    <center>
+		<h3>四川区域2013年4月所有地震三维显示 </h3>
+		<p>需要Google Earth Plug-in，请下载安装！或者直接<a href="../kml/sichuan-april-3d-plain.kml"> 下载KML文件</a>，然后在Google Earth中打开。</p>
+		
+	</center>
+		
+		
+		
+		<center>
+			<script src="http://www.gmodules.com/ig/ifr?url=http://dl.google.com/developers/maps/embedkmlgadget.xml&amp;up_kml_url=https%3A%2F%2Fraw.github.com%2FJianghao%2Fearthquake%2Fgh-pages%2Fkml%2Fsichuan-april-3d-plain.kml&amp;up_view_mode=earth&amp;up_earth_2d_fallback=0&amp;up_earth_fly_from_space=1&amp;up_earth_show_nav_controls=1&amp;up_earth_show_buildings=0&amp;up_earth_show_terrain=1&amp;up_earth_show_roads=0&amp;up_earth_show_borders=1&amp;up_earth_sphere=earth&amp;up_maps_zoom_out=0&amp;up_maps_default_type=map&amp;synd=open&amp;w=1000&amp;h=600&amp;title=&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js"></script>
+		</center>
+		<p>※<b>颜色:</b>蓝色到红色，地震震级增大；※<b>大小:</b>地震震级；※<b>标签:</b>地震震级；※<b>高度:</b>震源深度km，高于地面越多，震源深度越深</p>
+	
+
+<hr /> 
+    <center>
+		<p>数据来源：中国地震科学数据共享中心。意见反馈：wangjh@lreis.ac.cn；微博：<a href="http://weibo.com/hellowangjh" target="_blank">@沐洲</a><p> <br/>
+		<p>Copyright &copy; 2013 Jianghao Wang All Rights Reserved.<p>
+	</center> 
+ </body>  
+  </html>

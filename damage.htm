@@ -1,0 +1,70 @@
+<html> 
+ <head> 
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ <title>次生灾害</title>
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	
+	 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"> </script>  
+	 <script type="text/javascript" src="js/secondary-disaster.js"> </script> 
+	    
+	 <style type="text/css">  
+		 #map_canvas { float: left;
+		  width: 90% ;
+		  height: 80% ; }
+		 
+		 #cBoxes {float: left;
+		  width: 10% ;
+		  height:  80% ;
+		 overflow:auto; 
+	 </style> 
+
+ </head> 
+ <body onload="initialize()">
+     <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">四川雅安地震信息</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="death.htm">伤亡状况统计</a></li>
+                <li><a href="spacetime/index.htm">余震时空分析</a></li>
+                <li class="active"><a href="damage.htm">次生灾害分析</a></li>
+                <li><a href="rs.htm">遥感影像分析</a></li>
+                <li><a href="about.htm">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+	  
+    <center>
+		<h3>滑坡，道路堵塞，堰塞湖等次生灾害分布</h3>
+	</center>
+
+<div id="map_canvas"></div>  
+ <div id="cBoxes"> 
+	<input type="checkbox" id="spxlandslidebox" onClick='boxclick(this,markersspxlandslide,"spxlandslidebox");' /> <img src="pic/orange.png" /> <br/>
+	<b>滑坡点</b><hr />
+	<input type="checkbox" id="spxroadbox" onClick='boxclick(this,markersspxroad,"spxroadbox");' /> <img src="pic/cabs.png" /><br/>
+	<b>道路堵塞点</b><hr />
+	<input type="checkbox" id="spxlakebox" onClick='boxclick(this,markersspxlake,"spxlakebox");' /> <img src="pic/icon29.png" /><br/>
+	<b>堰塞湖点</b> <hr />
+</div>
+
+		<blockquote>
+			<p>根据<a href="http://www.scgis.net/LSXEarthquake/" target="_blank">四川省测绘地理信息局</a>提供的数据绘制了灾区滑坡，道路阻塞点和堰塞湖的情况。点击图标可查看详情</p>
+		</blockquote>
+</div>
+<hr/> 
+    <center>
+		<p>数据来源：中国地震科学数据共享中心；<a href="http://www.scgis.net/LSXEarthquake/" target="_blank">四川省测绘地理信息局</a>。意见反馈：wangjh@lreis.ac.cn；微博：<a href="http://weibo.com/hellowangjh" target="_blank">@沐洲</a><p> <br/>
+		<p>Copyright &copy; 2013 Jianghao Wang All Rights Reserved.<p>
+	</center> 
+
+	</body>  
+  </html>

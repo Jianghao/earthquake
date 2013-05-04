@@ -1,26 +1,54 @@
 
 <html>
 <head>
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<title>heatmap.js GMaps Heatmap Layer</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<title>雅安地震信息发布平台</title>
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+				<style>
 				#heatmapArea {
 					position:relative;
 					float:left;
 					width:100%;
-					height:100%;
+					height:80%;
 					border:1px dashed black;
 				}
 			</style>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 </head>
 <body>
-<div id="main">
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">四川雅安地震信息</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="../index.htm">Home</a></li>
+                <li><a href="../death.htm">伤亡状况统计</a></li>
+                <li><a href="../spacetime/index.htm">余震时空分析</a></li>
+                <li><a href="../damage.htm">次生灾害分析</a></li>
+                <li><a href="../rs.htm">遥感影像分析</a></li>
+                <li><a href="../about.htm">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+	  
+	<div>
+		<center>
+			 <h3>2012年1月 - 2013年5月，全球大于5级地震热点分布</h3>
+		</center> 
+	<p>查询<a href="http://data.earthquake.cn/index.html">地震数据共享中心</a>，自2012年1月来发生的所有地震，将这些地震绘制到地图上，并采用heatmap的形式显示。图中可以清晰地看出地震带，板块边界。<p>
+	</div>	 
+
 			<div id="heatmapArea">
 			</div>
-	
-</div>
+
 <script type="text/javascript" src="heatmap.js"></script>
 <script type="text/javascript" src="heatmap-gmaps.js"></script>
 <script type="text/javascript">
@@ -60,7 +88,15 @@
 			heatmap.setDataSet(testData);
 		});
 	};
-
 </script>
-</body>
-</html>
+
+<hr /> 
+
+    <center>
+		<p>数据来源：中国地震科学数据共享中心。意见反馈：wangjh@lreis.ac.cn；微博：<a href="http://weibo.com/hellowangjh" target="_blank">@沐洲</a><p> <br/>
+		<p>Copyright &copy; 2013 Jianghao Wang All Rights Reserved.<p>
+	</center> 
+	
+
+ </body>  
+  </html>

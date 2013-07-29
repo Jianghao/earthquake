@@ -1,11 +1,12 @@
 <html> 
  <head> 
- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
- <title>�Ű�������Ϣ����ƽ̨</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+ <title>雅安地震信息发布平台</title>
 
-    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+ 	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 	
  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"> </script>  
  <script type="text/javascript" src="js/location.js"> </script> 
@@ -17,16 +18,16 @@
      <div class="container">
 
       <div class="masthead">
-        <h3 class="muted">�Ĵ��Ű�������Ϣ</h3>
+        <h3 class="muted">四川雅安地震信息</h3>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
                 <li class="active"><a href="index.htm">Home</a></li>
-                <li><a href="death.htm">����״��ͳ��</a></li>
-                <li><a href="spacetime/index.htm">����ʱ�շ���</a></li>
-                <li><a href="damage.htm">�����ֺ�����</a></li>
-                <li><a href="rs.htm">ң��Ӱ�����</a></li>
+                <li><a href="death.htm">伤亡状况统计</a></li>
+                <li><a href="spacetime/index.htm">余震时空分析</a></li>
+                <li><a href="damage.htm">次生灾害分析</a></li>
+                <li><a href="rs.htm">遥感影像分析</a></li>
                 <li><a href="about.htm">About</a></li>
               </ul>
             </div>
@@ -37,7 +38,7 @@
 	 
 	  
     <center>
-		<h3>����4��22��20:00��189�����ѣ�26��ʧ�٣�12211������ </h3>
+		<h3>截至4月22日20:00：189人遇难，26人失踪，12211人受伤 </h3>
 	</center>
   
 
@@ -46,7 +47,7 @@
 <table > 
 <tr>
 	<center>
-    <b> ��ӭ��ע�ҵ�΢��</b> 
+    <b> 欢迎关注我的微博</b> 
          <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=6&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2283242060&verifier=8a8120bb&dpc=1"></iframe>
     </div> 
 	</center>
@@ -55,19 +56,19 @@
  <hr /> 
 
 <tr> 
-  <td> <input type="checkbox" id="spbox" onClick='boxclick(this,polysp,"spbox");' /> <b> ������<b> </td> </tr> 
+  <td> <input type="checkbox" id="spbox" onClick='boxclick(this,polysp,"spbox");' /> <b> 地震震级<b> </td> </tr> 
 <tr> 
   <td> 
- <input type="text" id="sptext" value="80" onChange='setOpac(polysp,"sptext")' size=3 /> ͸���� (0-100 %) </td> </tr> 
+ <input type="text" id="sptext" value="80" onChange='setOpac(polysp,"sptext")' size=3 /> 透明度 (0-100 %) </td> </tr> 
 <tr> 
   <td> 
- <input type="text" id="sptextW" value="2" onChange='setLineWeight(polysp,"sptextW")' size=3 /> �߿� (pixels) </td> </tr> 
+ <input type="text" id="sptextW" value="2" onChange='setLineWeight(polysp,"sptextW")' size=3 /> 线宽 (pixels) </td> </tr> 
   
  <tr> 
-  <td> <input type="checkbox"  checked="checked"  id="boxLegend3c78764b3b81" onClick='legendDisplay(this,"Legend3c78764b3b81");' /> <b> ��ֵ<b> <div style="display:block;" id="Legend3c78764b3b81"> <img src="pic/Legend3c78764b3b81.png" alt="Legend"></div> </td> </tr>
+  <td> <input type="checkbox"  checked="checked"  id="boxLegend3c78764b3b81" onClick='legendDisplay(this,"Legend3c78764b3b81");' /> <b> 震级值<b> <div style="display:block;" id="Legend3c78764b3b81"> <img src="pic/Legend3c78764b3b81.png" alt="Legend"></div> </td> </tr>
 
 <tr> 
-  <td> <b>���ԲȦ���Բ鿴��������<b> </td> </tr> 
+  <td> <b>点击圆圈可以查看地震详情<b> </td> </tr> 
 <tr> 
  
  </table> 
@@ -79,111 +80,111 @@
 </div>
 
    <hr /> 
-<center><h4>�Ű������б� (��ֵ3������96��)</h4>
+<center><h4>雅安地震列表 (震级值3级共计96次)</h4>
 <TABLE border=1>
-<TR> <TH>  </TH> <TH> ���� </TH> <TH> ʱ�� </TH> <TH> γ�� </TH> <TH> ���� </TH> <TH> ��� </TH> <TH> ������ </TH> <TH> ��ֵ </TH> <TH> �¼����� </TH> <TH> �ο����� </TH>  </TR>
-  <TR> <TD align="right"> 1 </TD> <TD> 2013-04-22 </TD> <TD> 19:04:52.5 </TD> <TD align="right"> 30.21 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  21 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���������� </TD> </TR>
-  <TR> <TD align="right"> 2 </TD> <TD> 2013-04-22 </TD> <TD> 18:56:50.4 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 103.04 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء��ɶ��������н��� </TD> </TR>
-  <TR> <TD align="right"> 3 </TD> <TD> 2013-04-22 </TD> <TD> 17:14:04.5 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.01 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء��ɶ��������н��� </TD> </TR>
-  <TR> <TD align="right"> 4 </TD> <TD> 2013-04-22 </TD> <TD> 13:42:52.4 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.81 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 5 </TD> <TD> 2013-04-22 </TD> <TD> 09:18:08.5 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 6 </TD> <TD> 2013-04-22 </TD> <TD> 07:45:00.9 </TD> <TD align="right"> 30.29 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 7 </TD> <TD> 2013-04-22 </TD> <TD> 07:17:04.4 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 8 </TD> <TD> 2013-04-22 </TD> <TD> 06:21:10.2 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 9 </TD> <TD> 2013-04-22 </TD> <TD> 04:53:20.2 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 10 </TD> <TD> 2013-04-22 </TD> <TD> 04:36:11.9 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.98 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 11 </TD> <TD> 2013-04-22 </TD> <TD> 03:36:37.7 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 12 </TD> <TD> 2013-04-21 </TD> <TD> 23:25:24.1 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 13 </TD> <TD> 2013-04-21 </TD> <TD> 22:16:54.3 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 14 </TD> <TD> 2013-04-21 </TD> <TD> 20:06:23.4 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 15 </TD> <TD> 2013-04-21 </TD> <TD> 18:55:10.1 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 16 </TD> <TD> 2013-04-21 </TD> <TD> 18:48:23.4 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 17 </TD> <TD> 2013-04-21 </TD> <TD> 18:24:15.0 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 18 </TD> <TD> 2013-04-21 </TD> <TD> 17:43:38.6 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 19 </TD> <TD> 2013-04-21 </TD> <TD> 17:30:24.3 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 20 </TD> <TD> 2013-04-21 </TD> <TD> 17:18:10.6 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.99 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 21 </TD> <TD> 2013-04-21 </TD> <TD> 17:05:22.7 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 5.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء��ɶ��������н��� </TD> </TR>
-  <TR> <TD align="right"> 22 </TD> <TD> 2013-04-21 </TD> <TD> 17:01:55.4 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 23 </TD> <TD> 2013-04-21 </TD> <TD> 16:45:38.7 </TD> <TD align="right"> 30.35 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 24 </TD> <TD> 2013-04-21 </TD> <TD> 12:58:49.4 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 25 </TD> <TD> 2013-04-21 </TD> <TD> 12:39:18.6 </TD> <TD align="right"> 30.22 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 26 </TD> <TD> 2013-04-21 </TD> <TD> 11:59:37.4 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.90 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 27 </TD> <TD> 2013-04-21 </TD> <TD> 09:29:33.1 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.91 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 28 </TD> <TD> 2013-04-21 </TD> <TD> 08:13:07.1 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 29 </TD> <TD> 2013-04-21 </TD> <TD> 07:50:59.9 </TD> <TD align="right"> 30.17 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء������ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 30 </TD> <TD> 2013-04-21 </TD> <TD> 06:27:22.7 </TD> <TD align="right"> 30.32 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 31 </TD> <TD> 2013-04-21 </TD> <TD> 05:54:29.1 </TD> <TD align="right"> 30.09 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 32 </TD> <TD> 2013-04-21 </TD> <TD> 05:29:56.1 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 33 </TD> <TD> 2013-04-21 </TD> <TD> 04:53:44.1 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 5.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء��ɶ��������н��� </TD> </TR>
-  <TR> <TD align="right"> 34 </TD> <TD> 2013-04-21 </TD> <TD> 03:54:45.0 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 35 </TD> <TD> 2013-04-21 </TD> <TD> 02:32:08.9 </TD> <TD align="right"> 30.34 </TD> <TD align="right"> 102.99 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 36 </TD> <TD> 2013-04-21 </TD> <TD> 00:38:21.8 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 37 </TD> <TD> 2013-04-21 </TD> <TD> 00:14:35.7 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 38 </TD> <TD> 2013-04-21 </TD> <TD> 00:06:47.6 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 39 </TD> <TD> 2013-4-20 </TD> <TD> 23:20:51 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 40 </TD> <TD> 2013-4-20 </TD> <TD> 23:08:12 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.91 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 41 </TD> <TD> 2013-4-20 </TD> <TD> 23:02:56 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 42 </TD> <TD> 2013-4-20 </TD> <TD> 23:00:39 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.79 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 43 </TD> <TD> 2013-4-20 </TD> <TD> 22:29:35 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 44 </TD> <TD> 2013-4-20 </TD> <TD> 22:10:32 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 45 </TD> <TD> 2013-4-20 </TD> <TD> 20:33:40 </TD> <TD align="right"> 30.04 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�� </TD> </TR>
-  <TR> <TD align="right"> 46 </TD> <TD> 2013-4-20 </TD> <TD> 19:12:50 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.50 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 47 </TD> <TD> 2013-4-20 </TD> <TD> 19:10:52 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 48 </TD> <TD> 2013-4-20 </TD> <TD> 19:01:55 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 49 </TD> <TD> 2013-4-20 </TD> <TD> 18:59:00 </TD> <TD align="right"> 30.38 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 50 </TD> <TD> 2013-4-20 </TD> <TD> 18:09:16 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 51 </TD> <TD> 2013-4-20 </TD> <TD> 18:03:14 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 52 </TD> <TD> 2013-4-20 </TD> <TD> 17:45:15 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.20 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�ɶ��������� </TD> </TR>
-  <TR> <TD align="right"> 53 </TD> <TD> 2013-4-20 </TD> <TD> 16:39:43 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 54 </TD> <TD> 2013-4-20 </TD> <TD> 16:06:03 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 55 </TD> <TD> 2013-4-20 </TD> <TD> 15:53:28 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 56 </TD> <TD> 2013-4-20 </TD> <TD> 15:18:32 </TD> <TD align="right"> 30.40 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 57 </TD> <TD> 2013-4-20 </TD> <TD> 15:12:23 </TD> <TD align="right"> 30.38 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 58 </TD> <TD> 2013-4-20 </TD> <TD> 14:43:21 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 59 </TD> <TD> 2013-4-20 </TD> <TD> 14:23:17 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.88 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 60 </TD> <TD> 2013-4-20 </TD> <TD> 14:12:46 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء������ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 61 </TD> <TD> 2013-4-20 </TD> <TD> 13:52:07 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 62 </TD> <TD> 2013-4-20 </TD> <TD> 13:44:02 </TD> <TD align="right"> 30.08 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 63 </TD> <TD> 2013-4-20 </TD> <TD> 13:39:06 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 64 </TD> <TD> 2013-4-20 </TD> <TD> 13:36:36 </TD> <TD align="right"> 30.19 </TD> <TD align="right"> 102.88 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 65 </TD> <TD> 2013-4-20 </TD> <TD> 12:47:02 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 66 </TD> <TD> 2013-4-20 </TD> <TD> 12:38:50 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 67 </TD> <TD> 2013-4-20 </TD> <TD> 11:55:38 </TD> <TD align="right"> 30.35 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 68 </TD> <TD> 2013-4-20 </TD> <TD> 11:40:23 </TD> <TD align="right"> 30.11 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 69 </TD> <TD> 2013-4-20 </TD> <TD> 11:34:17 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 5.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 70 </TD> <TD> 2013-4-20 </TD> <TD> 11:29:11 </TD> <TD align="right"> 30.17 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 71 </TD> <TD> 2013-4-20 </TD> <TD> 11:19:51 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 72 </TD> <TD> 2013-4-20 </TD> <TD> 11:04:56 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 73 </TD> <TD> 2013-4-20 </TD> <TD> 10:46:47 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 74 </TD> <TD> 2013-4-20 </TD> <TD> 10:41:14 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">   9 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 75 </TD> <TD> 2013-4-20 </TD> <TD> 10:38:35 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 76 </TD> <TD> 2013-4-20 </TD> <TD> 10:29:49 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 77 </TD> <TD> 2013-4-20 </TD> <TD> 10:19:04 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 78 </TD> <TD> 2013-4-20 </TD> <TD> 10:12:35 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 79 </TD> <TD> 2013-4-20 </TD> <TD> 10:06:29 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 103.10 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű������������ɽ�ء��ɶ��������н��� </TD> </TR>
-  <TR> <TD align="right"> 80 </TD> <TD> 2013-4-20 </TD> <TD> 10:01:41 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 81 </TD> <TD> 2013-4-20 </TD> <TD> 9:54:56 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 82 </TD> <TD> 2013-4-20 </TD> <TD> 9:39:34 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.50 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 83 </TD> <TD> 2013-4-20 </TD> <TD> 9:37:28 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.90 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
-  <TR> <TD align="right"> 84 </TD> <TD> 2013-4-20 </TD> <TD> 9:26:00 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.40 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 85 </TD> <TD> 2013-4-20 </TD> <TD> 9:20:09 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 86 </TD> <TD> 2013-4-20 </TD> <TD> 9:11:52 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء���ȫ�ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 87 </TD> <TD> 2013-4-20 </TD> <TD> 9:02:57 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 88 </TD> <TD> 2013-4-20 </TD> <TD> 8:52:23 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  13 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 89 </TD> <TD> 2013-4-20 </TD> <TD> 8:50:34 </TD> <TD align="right"> 30.14 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű�����ȫ�ء�«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 90 </TD> <TD> 2013-4-20 </TD> <TD> 8:42:35 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 91 </TD> <TD> 2013-4-20 </TD> <TD> 8:37:12 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء���ȫ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 92 </TD> <TD> 2013-4-20 </TD> <TD> 8:31:34 </TD> <TD align="right"> 30.40 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 93 </TD> <TD> 2013-4-20 </TD> <TD> 8:27:26 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű��б����ء�«ɽ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 94 </TD> <TD> 2013-4-20 </TD> <TD> 8:07:32 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 5.10 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 95 </TD> <TD> 2013-4-20 </TD> <TD> 8:06:38 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 4.80 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�ء������ء���ȫ�ؽ��� </TD> </TR>
-  <TR> <TD align="right"> 96 </TD> <TD> 2013-4-20 </TD> <TD> 8:02:46 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  13 </TD> <TD> Ms </TD> <TD align="right"> 7.00 </TD> <TD> eq </TD> <TD> �Ĵ�ʡ�Ű���«ɽ�� </TD> </TR>
+<TR> <TH>  </TH> <TH> 日期 </TH> <TH> 时间 </TH> <TH> 纬度 </TH> <TH> 经度 </TH> <TH> 深度 </TH> <TH> 震级类型 </TH> <TH> 震级值 </TH> <TH> 事件类型 </TH> <TH> 参考地名 </TH>  </TR>
+  <TR> <TD align="right"> 1 </TD> <TD> 2013-04-22 </TD> <TD> 19:04:52.5 </TD> <TD align="right"> 30.21 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  21 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、雨城区交界 </TD> </TR>
+  <TR> <TD align="right"> 2 </TD> <TD> 2013-04-22 </TD> <TD> 18:56:50.4 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 103.04 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、成都市邛崃市交界 </TD> </TR>
+  <TR> <TD align="right"> 3 </TD> <TD> 2013-04-22 </TD> <TD> 17:14:04.5 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.01 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、成都市邛崃市交界 </TD> </TR>
+  <TR> <TD align="right"> 4 </TD> <TD> 2013-04-22 </TD> <TD> 13:42:52.4 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.81 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 5 </TD> <TD> 2013-04-22 </TD> <TD> 09:18:08.5 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 6 </TD> <TD> 2013-04-22 </TD> <TD> 07:45:00.9 </TD> <TD align="right"> 30.29 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 7 </TD> <TD> 2013-04-22 </TD> <TD> 07:17:04.4 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 8 </TD> <TD> 2013-04-22 </TD> <TD> 06:21:10.2 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 9 </TD> <TD> 2013-04-22 </TD> <TD> 04:53:20.2 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 10 </TD> <TD> 2013-04-22 </TD> <TD> 04:36:11.9 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.98 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 11 </TD> <TD> 2013-04-22 </TD> <TD> 03:36:37.7 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 12 </TD> <TD> 2013-04-21 </TD> <TD> 23:25:24.1 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 13 </TD> <TD> 2013-04-21 </TD> <TD> 22:16:54.3 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 14 </TD> <TD> 2013-04-21 </TD> <TD> 20:06:23.4 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 15 </TD> <TD> 2013-04-21 </TD> <TD> 18:55:10.1 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 16 </TD> <TD> 2013-04-21 </TD> <TD> 18:48:23.4 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 17 </TD> <TD> 2013-04-21 </TD> <TD> 18:24:15.0 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 18 </TD> <TD> 2013-04-21 </TD> <TD> 17:43:38.6 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 19 </TD> <TD> 2013-04-21 </TD> <TD> 17:30:24.3 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 20 </TD> <TD> 2013-04-21 </TD> <TD> 17:18:10.6 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.99 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 21 </TD> <TD> 2013-04-21 </TD> <TD> 17:05:22.7 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 5.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、成都市邛崃市交界 </TD> </TR>
+  <TR> <TD align="right"> 22 </TD> <TD> 2013-04-21 </TD> <TD> 17:01:55.4 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 23 </TD> <TD> 2013-04-21 </TD> <TD> 16:45:38.7 </TD> <TD align="right"> 30.35 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 24 </TD> <TD> 2013-04-21 </TD> <TD> 12:58:49.4 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 25 </TD> <TD> 2013-04-21 </TD> <TD> 12:39:18.6 </TD> <TD align="right"> 30.22 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 26 </TD> <TD> 2013-04-21 </TD> <TD> 11:59:37.4 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.90 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 27 </TD> <TD> 2013-04-21 </TD> <TD> 09:29:33.1 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.91 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 28 </TD> <TD> 2013-04-21 </TD> <TD> 08:13:07.1 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 29 </TD> <TD> 2013-04-21 </TD> <TD> 07:50:59.9 </TD> <TD align="right"> 30.17 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 30 </TD> <TD> 2013-04-21 </TD> <TD> 06:27:22.7 </TD> <TD align="right"> 30.32 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 31 </TD> <TD> 2013-04-21 </TD> <TD> 05:54:29.1 </TD> <TD align="right"> 30.09 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 32 </TD> <TD> 2013-04-21 </TD> <TD> 05:29:56.1 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 33 </TD> <TD> 2013-04-21 </TD> <TD> 04:53:44.1 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 5.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、成都市邛崃市交界 </TD> </TR>
+  <TR> <TD align="right"> 34 </TD> <TD> 2013-04-21 </TD> <TD> 03:54:45.0 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 35 </TD> <TD> 2013-04-21 </TD> <TD> 02:32:08.9 </TD> <TD align="right"> 30.34 </TD> <TD align="right"> 102.99 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 36 </TD> <TD> 2013-04-21 </TD> <TD> 00:38:21.8 </TD> <TD align="right"> 30.27 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 37 </TD> <TD> 2013-04-21 </TD> <TD> 00:14:35.7 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 38 </TD> <TD> 2013-04-21 </TD> <TD> 00:06:47.6 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 39 </TD> <TD> 2013-4-20 </TD> <TD> 23:20:51 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 40 </TD> <TD> 2013-4-20 </TD> <TD> 23:08:12 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.91 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 41 </TD> <TD> 2013-4-20 </TD> <TD> 23:02:56 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 42 </TD> <TD> 2013-4-20 </TD> <TD> 23:00:39 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.79 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 43 </TD> <TD> 2013-4-20 </TD> <TD> 22:29:35 </TD> <TD align="right"> 30.24 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 44 </TD> <TD> 2013-4-20 </TD> <TD> 22:10:32 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 45 </TD> <TD> 2013-4-20 </TD> <TD> 20:33:40 </TD> <TD align="right"> 30.04 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县 </TD> </TR>
+  <TR> <TD align="right"> 46 </TD> <TD> 2013-4-20 </TD> <TD> 19:12:50 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.50 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 47 </TD> <TD> 2013-4-20 </TD> <TD> 19:10:52 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 48 </TD> <TD> 2013-4-20 </TD> <TD> 19:01:55 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 49 </TD> <TD> 2013-4-20 </TD> <TD> 18:59:00 </TD> <TD align="right"> 30.38 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.80 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 50 </TD> <TD> 2013-4-20 </TD> <TD> 18:09:16 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.95 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 51 </TD> <TD> 2013-4-20 </TD> <TD> 18:03:14 </TD> <TD align="right"> 30.13 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 52 </TD> <TD> 2013-4-20 </TD> <TD> 17:45:15 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.20 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.00 </TD> <TD> eq </TD> <TD> 四川省成都市邛崃市 </TD> </TR>
+  <TR> <TD align="right"> 53 </TD> <TD> 2013-4-20 </TD> <TD> 16:39:43 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 54 </TD> <TD> 2013-4-20 </TD> <TD> 16:06:03 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 55 </TD> <TD> 2013-4-20 </TD> <TD> 15:53:28 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 56 </TD> <TD> 2013-4-20 </TD> <TD> 15:18:32 </TD> <TD align="right"> 30.40 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 57 </TD> <TD> 2013-4-20 </TD> <TD> 15:12:23 </TD> <TD align="right"> 30.38 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 58 </TD> <TD> 2013-4-20 </TD> <TD> 14:43:21 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 59 </TD> <TD> 2013-4-20 </TD> <TD> 14:23:17 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.88 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 60 </TD> <TD> 2013-4-20 </TD> <TD> 14:12:46 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 61 </TD> <TD> 2013-4-20 </TD> <TD> 13:52:07 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.92 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 62 </TD> <TD> 2013-4-20 </TD> <TD> 13:44:02 </TD> <TD align="right"> 30.08 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 63 </TD> <TD> 2013-4-20 </TD> <TD> 13:39:06 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 64 </TD> <TD> 2013-4-20 </TD> <TD> 13:36:36 </TD> <TD align="right"> 30.19 </TD> <TD align="right"> 102.88 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 65 </TD> <TD> 2013-4-20 </TD> <TD> 12:47:02 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 66 </TD> <TD> 2013-4-20 </TD> <TD> 12:38:50 </TD> <TD align="right"> 30.36 </TD> <TD align="right"> 102.97 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 67 </TD> <TD> 2013-4-20 </TD> <TD> 11:55:38 </TD> <TD align="right"> 30.35 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 68 </TD> <TD> 2013-4-20 </TD> <TD> 11:40:23 </TD> <TD align="right"> 30.11 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  14 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 69 </TD> <TD> 2013-4-20 </TD> <TD> 11:34:17 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 5.30 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 70 </TD> <TD> 2013-4-20 </TD> <TD> 11:29:11 </TD> <TD align="right"> 30.17 </TD> <TD align="right"> 102.86 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 71 </TD> <TD> 2013-4-20 </TD> <TD> 11:19:51 </TD> <TD align="right"> 30.23 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 72 </TD> <TD> 2013-4-20 </TD> <TD> 11:04:56 </TD> <TD align="right"> 30.33 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 73 </TD> <TD> 2013-4-20 </TD> <TD> 10:46:47 </TD> <TD align="right"> 30.25 </TD> <TD align="right"> 102.94 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 74 </TD> <TD> 2013-4-20 </TD> <TD> 10:41:14 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">   9 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 75 </TD> <TD> 2013-4-20 </TD> <TD> 10:38:35 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 76 </TD> <TD> 2013-4-20 </TD> <TD> 10:29:49 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.84 </TD> <TD align="right">  18 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 77 </TD> <TD> 2013-4-20 </TD> <TD> 10:19:04 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 78 </TD> <TD> 2013-4-20 </TD> <TD> 10:12:35 </TD> <TD align="right"> 30.31 </TD> <TD align="right"> 102.96 </TD> <TD align="right">  11 </TD> <TD> Ms </TD> <TD align="right"> 3.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 79 </TD> <TD> 2013-4-20 </TD> <TD> 10:06:29 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 103.10 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 3.30 </TD> <TD> eq </TD> <TD> 四川省雅安市雨城区、名山县、成都市邛崃市交界 </TD> </TR>
+  <TR> <TD align="right"> 80 </TD> <TD> 2013-4-20 </TD> <TD> 10:01:41 </TD> <TD align="right"> 30.18 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 81 </TD> <TD> 2013-4-20 </TD> <TD> 9:54:56 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.93 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 3.20 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 82 </TD> <TD> 2013-4-20 </TD> <TD> 9:39:34 </TD> <TD align="right"> 30.10 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.50 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 83 </TD> <TD> 2013-4-20 </TD> <TD> 9:37:28 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.90 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
+  <TR> <TD align="right"> 84 </TD> <TD> 2013-4-20 </TD> <TD> 9:26:00 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  17 </TD> <TD> Ms </TD> <TD align="right"> 4.40 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 85 </TD> <TD> 2013-4-20 </TD> <TD> 9:20:09 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 86 </TD> <TD> 2013-4-20 </TD> <TD> 9:11:52 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.80 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 4.30 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、天全县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 87 </TD> <TD> 2013-4-20 </TD> <TD> 9:02:57 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 4.60 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 88 </TD> <TD> 2013-4-20 </TD> <TD> 8:52:23 </TD> <TD align="right"> 30.15 </TD> <TD align="right"> 102.85 </TD> <TD align="right">  13 </TD> <TD> Ms </TD> <TD align="right"> 3.70 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 89 </TD> <TD> 2013-4-20 </TD> <TD> 8:50:34 </TD> <TD align="right"> 30.14 </TD> <TD align="right"> 102.83 </TD> <TD align="right">  16 </TD> <TD> Ms </TD> <TD align="right"> 3.10 </TD> <TD> eq </TD> <TD> 四川省雅安市天全县、芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 90 </TD> <TD> 2013-4-20 </TD> <TD> 8:42:35 </TD> <TD align="right"> 30.28 </TD> <TD align="right"> 102.89 </TD> <TD align="right">  20 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 91 </TD> <TD> 2013-4-20 </TD> <TD> 8:37:12 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  19 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、天全县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 92 </TD> <TD> 2013-4-20 </TD> <TD> 8:31:34 </TD> <TD align="right"> 30.40 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  12 </TD> <TD> Ms </TD> <TD align="right"> 4.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 93 </TD> <TD> 2013-4-20 </TD> <TD> 8:27:26 </TD> <TD align="right"> 30.26 </TD> <TD align="right"> 102.87 </TD> <TD align="right">  15 </TD> <TD> Ms </TD> <TD align="right"> 3.60 </TD> <TD> eq </TD> <TD> 四川省雅安市宝兴县、芦山县交界 </TD> </TR>
+  <TR> <TD align="right"> 94 </TD> <TD> 2013-4-20 </TD> <TD> 8:07:32 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 5.10 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县交界 </TD> </TR>
+  <TR> <TD align="right"> 95 </TD> <TD> 2013-4-20 </TD> <TD> 8:06:38 </TD> <TD align="right"> 30.20 </TD> <TD align="right"> 102.90 </TD> <TD align="right">  10 </TD> <TD> Ms </TD> <TD align="right"> 4.80 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县、宝兴县、天全县交界 </TD> </TR>
+  <TR> <TD align="right"> 96 </TD> <TD> 2013-4-20 </TD> <TD> 8:02:46 </TD> <TD align="right"> 30.30 </TD> <TD align="right"> 103.00 </TD> <TD align="right">  13 </TD> <TD> Ms </TD> <TD align="right"> 7.00 </TD> <TD> eq </TD> <TD> 四川省雅安市芦山县 </TD> </TR>
    </TABLE>
 </center>
 
 <hr /> 
     <center>
-		<p>������Դ���й������ѧ���ݹ������ġ����������wangjh@lreis.ac.cn��΢����<a href="http://weibo.com/hellowangjh" target="_blank">@����</a><p> <br/>
+		<p>数据来源：中国地震科学数据共享中心。意见反馈：wangjh@lreis.ac.cn；微博：<a href="http://weibo.com/hellowangjh" target="_blank">@沐洲</a><p> <br/>
 		<p>Copyright &copy; 2013 Jianghao Wang All Rights Reserved.<p>
 	</center> 
 	
